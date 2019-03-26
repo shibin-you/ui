@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width" />
+  <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+
+  <title>滑块</title>
+  <link rel="stylesheet" href="./progress-bar.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background: gray;
+  }
+  #bar{
+    margin: 0 auto;
+    width: 300px;
+  }
+</style>
+
+<body>
+  <div id="bar">
+    <div class="progress-bar">
+      <div class="bar-inner">
+        <div class="progress">
+        </div>
+        <div class="progress-btn-wrapper">
+          <div class="progress-btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bar1">
+    <div class="progress-bar">
+      <div class="bar-inner">
+        <div class="progress">
+        </div>
+        <div class="progress-btn-wrapper">
+          <div class="progress-btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bar2">
+    <div class="progress-bar">
+      <div class="bar-inner">
+        <div class="progress">
+        </div>
+        <div class="progress-btn-wrapper">
+          <div class="progress-btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./progress-bar.js" charset="utf-8"></script>
+<script type="text/javascript">
+  var bar = new ProgressBar(document.querySelector('#bar'))
+  var bar1 = new ProgressBar(document.querySelector('#bar1'))
+
+  var bar2 = new ProgressBar(document.querySelector('#bar2'))
+</script>
+
+</html>
