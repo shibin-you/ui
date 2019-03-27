@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>环形进度条</title>
+    <link rel="stylesheet" href="../css/progress-circle.css">
+  </head>
+  <body>
+    <div class="progress-circle">
+      <svg width="64" height="64" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="progress-background" r="100" cx="100" cy="100" fill="transparent"/>
+        <circle class="progress-bar" r="100" cx="100" cy="100" fill="transparent"
+        stroke-dashoffset='314' stroke-dasharray="628"/>
+      </svg>
+      <slot></slot>
+    </div>
+  <script src="../js/progress-circle.js" charset="utf-8"></script>
+</html>
