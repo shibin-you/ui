@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
 
   <title>滑块</title>
-  <link rel="stylesheet" href="./progress-bar.css">
+  <link rel="stylesheet" href="../css/progress-bar.css">
 </head>
 <style>
   * {
@@ -65,12 +65,17 @@
     </div>
   </div>
 </body>
-<script src="./progress-bar.js" charset="utf-8"></script>
+<script src="../js/common.js" charset="utf-8"></script>
+<script src="../js/progress-bar.js" charset="utf-8"></script>
 <script type="text/javascript">
   var bar = new ProgressBar(document.querySelector('#bar'))
-  var bar1 = new ProgressBar(document.querySelector('#bar1'))
+  var bar2 = new ProgressBar(document.querySelector('#bar1'),function (percent) {
+    console.log(percent);
+  })
 
-  var bar2 = new ProgressBar(document.querySelector('#bar2'))
+  var bar2 = new ProgressBar(document.querySelector('#bar2'),function (percent) {
+    console.log(percent);
+  })
 </script>
 
 </html>
