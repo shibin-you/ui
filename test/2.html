@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      circle{
+        transform:rotate(-90deg);
+        transform-origin:center;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width='200' height='200' viewBox='0 0 204 204'>
+      <circle id="circle" cx='102' cy='102' r='100' fill='transparent' stroke='red' stroke-width='2'  stroke-dashoffset='0' stroke-dasharray="628"></circle>
+    </svg>
+  </body>
+  <script type="text/javascript">
+    function set(percent){
+
+      document.getElementById('circle').setAttribute('stroke-dashoffset',(1-percent)*628)
+
+    }
+    set(.5)
+  </script>
+</html>

@@ -1,3 +1,8 @@
+*{
+margin: 0;
+padding: 0;
+}
+
 .progress-circle circle {
   stroke-width: 8px;
   -webkit-transform-origin: center;
@@ -6,13 +11,11 @@
 
 .progress-circle circle.progress-background {
   position: relative;
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
   stroke: rgba(66, 185, 131, 0.5);
 }
 
 .progress-circle circle.progress-bar {
-  -webkit-transform: scale(0.9) rotate(-90deg);
-  transform: scale(0.9) rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform:  rotate(-90deg);
   stroke: rgba(66, 185, 131);
 }
