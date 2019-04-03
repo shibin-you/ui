@@ -11,7 +11,7 @@ function ProgressCircle(opts) {
         vm.progressBackground = vm.proGressContent.getElementsByClassName('progress-background')[0]
         vm.progressBar = vm.proGressContent.getElementsByClassName('progress-bar')[0]
         vm.o = opts.width / 2
-        vm.r = vm.o - opts.strokeWidth
+        vm.r = vm.o - opts.strokeWidth/2
         vm.girth = Math.PI * 2 * vm.r
         vm.width = opts.width
         vm.setPercentage = setPercentage
