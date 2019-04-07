@@ -28,8 +28,23 @@
 </body>
 
 <script type="text/javascript">
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1))
+}
 
-
+ const shuffle = function(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    var j = getRandomInt(0, i)
+    // console.log(j);
+    // let t=arr[i]
+    // arr[i]=arr[j]
+    // arr[j]=arr[t]
+    [arr[i],arr[j]]=[arr[j],arr[i]]
+  }
+  return arr
+}
+var a=shuffle([1,2,3])
+console.log(a);
 </script>
 
 </html>
