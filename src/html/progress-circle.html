@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width" />
-    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no"> -->
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <title>环形进度条</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/progress-circle.css">
-  </head>
-  <body>
-    <div class="progress-circle">
-      <svg width="116" height="116" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <circle class="progress-background" r="50" cx="58" cy="58" fill="transparent"/>
-        <circle class="progress-bar" r="50" cx="58" cy="58" fill="transparent"
-        stroke-dashoffset='157'  stroke-dasharray="314"/>
-      </svg>
-      <slot></slot>
+</head>
+<body>
+<div>
+    <div id="progress-circle">
+        <div class="progress-circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class="progress-background"  fill="transparent"/>
+                <circle class="progress-bar"  fill="transparent"
+                        />
+            </svg>
+        </div>
     </div>
-  <script src="../js/progress-circle.js" charset="utf-8"></script>
+
+</div>
+</body>
+<script src="../js/common.js" charset="utf-8"></script>
+<script src="../js/progress-circle.js" charset="utf-8"></script>
+<script>
+    var a = new ProgressCircle({
+        el: '#progress-circle',
+        percentage: 30,
+        width: 116,
+        strokeWidth: 10,
+        color: 'red',
+        background: 'rgba(66, 185, 131, 0.5)'
+    })
+
+</script>
 </html>
