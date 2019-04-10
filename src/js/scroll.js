@@ -16,7 +16,6 @@ function Scroll(opts) {
       if (el === window) {
         var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight
         var windowHeight = document.documentElement.clientHeight || document.body.clientHeight
-        // console.log(this.scrollY +windowHeight , scrollHeight);
         if (this.scrollY + windowHeight+10 >= scrollHeight) {
           opts.scrollBottom.call(u)
         }
